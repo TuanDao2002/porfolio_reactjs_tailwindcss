@@ -8,6 +8,10 @@ import Node from '../assets/node.png';
 import AWS from '../assets/aws.png';
 import GitHub from '../assets/github.png';
 import Mongo from '../assets/mongo.png';
+import Java from '../assets/java.png';
+import Junit5 from '../assets/junit5-logo.png';
+import PostgreSQL from '../assets/postgresql.png';
+import Spring from '../assets/spring.png';
 
 const Skills = () => {
   return (
@@ -51,6 +55,22 @@ const Skills = () => {
 				<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-100'>
 					<img className='w-20 mx-auto' src={AWS} alt="AWS icon" />
 					<p className='my-4'>AWS</p>
+				</div>
+				<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-100'>
+					<img className='w-20 mx-auto' src={Java} alt="Java icon" />
+					<p className='my-4'>Java</p>
+				</div>
+				<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-100'>
+					<img className='w-20 mx-auto' src={Junit5} alt="JUnit 5 icon" />
+					<p className='my-4'>JUnit 5</p>
+				</div>
+				<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-100'>
+					<img className='w-20 mx-auto' src={PostgreSQL} alt="PostgreSQL icon" />
+					<p className='my-4'>PostgreSQL</p>
+				</div>
+				<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-100'>
+					<img className='w-20 mx-auto' src={Spring} alt="Spring icon" />
+					<p className='my-4'>Spring</p>
 				</div>
 			</div>
 		</div>

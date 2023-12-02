@@ -10,9 +10,8 @@ const Home = () => {
 				<p className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>Dao Kha Tuan</p>
 				<h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0]'>I'm a Full Stack Developer.</h2>
 				<p className='text-[#8892b0] py-4 max-w-[700px]'>
-					I’m a full-stack developer specializing in building (and occasionally
-          			designing) exceptional digital experiences. Currently, I’m focused on
-          			building responsive full-stack web applications.
+					I’m a full-stack developer specializing in building exceptional digital experiences. Currently, I’m focused on
+          			building high performance web applications servers.
 		  		</p>
 				<div>
 					{/* put class name "group" at button so when it is hovered, the arrow inside will rotate*/}

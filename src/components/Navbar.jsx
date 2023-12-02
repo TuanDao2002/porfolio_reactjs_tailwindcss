@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from "../assets/logo.png";
+import Profile from "../assets/profile_image.jpeg"
 import { Link } from "react-scroll";
+import { Links } from "../links/links";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,9 +12,9 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div>
-        <img src={Logo} alt="Logo Image" style={{ width: "50px" }} />
-      </div>
+      <a href={Links.LinkedinUrl} target="_blank" rel="noreferrer">
+        <img src={Profile} alt="Profile Image" style={{ width: "50px", borderRadius: "100%" }} />
+      </a>
 
       {/* menu */}
       {/* hidden except when width is above medium (768px) then it will display flex */}
@@ -94,7 +94,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href={Links.LinkedinUrl}
+              target="_blank"
+              rel="noreferrer"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -103,27 +105,22 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href={Links.GithubUrl}
+              target="_blank"
+              rel="noreferrer"
             >
               Github <FaGithub size={30} />
-            </a>
-          </li>
-
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href="/"
-            >
-              Mail <HiOutlineMail size={30} />
             </a>
           </li>
 
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href={Links.EmailUrl}
+              target="_blank"
+              rel="noreferrer"
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              Email <BsFillPersonLinesFill size={30} />
             </a>
           </li>
         </ul>
